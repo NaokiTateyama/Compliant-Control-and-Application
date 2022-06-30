@@ -6,7 +6,7 @@ mesh_files:
         name: "LightGrey"
         color: "0.7 0.7 0.7 1.0"
     collision:
-      mesh: "package://ur_description/meshes/ur5e/collision/base_xarm.stl"
+      mesh: "package://ur_description/meshes/ur5e/visual/base_xarm.stl"
 
   shoulder:
     visual:
@@ -15,7 +15,7 @@ mesh_files:
         name: "LightGrey"
         color: "0.7 0.7 0.7 1.0"
     collision:
-      mesh: "package://ur_description/meshes/ur5e/collision/link1_xarm.stl"
+      mesh: "package://ur_description/meshes/ur5e/visual/link1_xarm.stl"
 
   upper_arm:
     visual:
@@ -24,7 +24,7 @@ mesh_files:
         name: "LightGrey"
         color: "0.7 0.7 0.7 1.0"
     collision:
-      mesh: "package://ur_description/meshes/ur5e/collision/link2_xarm.stl"
+      mesh: "package://ur_description/meshes/ur5e/visual/link2_xarm.stl"
       mesh_files:
 
   forearm:
@@ -34,7 +34,7 @@ mesh_files:
         name: "LightGrey"
         color: "0.7 0.7 0.7 1.0"
     collision:
-      mesh: "package://ur_description/meshes/ur5e/collision/link3_xarm.stl"
+      mesh: "package://ur_description/meshes/ur5e/visual/link3_xarm.stl"
 
   wrist_1:
     visual:
@@ -43,7 +43,7 @@ mesh_files:
         name: "LightGrey"
         color: "0.7 0.7 0.7 1.0"
     collision:
-      mesh: "package://ur_description/meshes/ur5e/collision/link4_xarm.stl"
+      mesh: "package://ur_description/meshes/ur5e/visual/link4_xarm.stl"
     visual_offset: -0.127
 
   wrist_2:
@@ -53,7 +53,7 @@ mesh_files:
         name: "LightGrey"
         color: "0.7 0.7 0.7 1.0"
     collision:
-      mesh: "package://ur_description/meshes/ur5e/collision/link5_xarm.stl"
+      mesh: "package://ur_description/meshes/ur5e/visual/link5_xarm.stl"
     visual_offset: -0.0997
 
   wrist_3:
@@ -63,5 +63,5 @@ mesh_files:
         name: "LightGrey"
         color: "0.7 0.7 0.7 1.0"
     collision:
-      mesh: "package://ur_description/meshes/ur5e/collision/link6_xarm.stl"
+      mesh: "package://ur_description/meshes/ur5e/visual/link6_xarm.stl"
     visual_offset: -0.0989
