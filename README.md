@@ -13,6 +13,12 @@ If there is come up with some errors during compile process, you might need to i
 ```bash
 rosdep install -i --from-path src --rosdistro noetic --ignore-src -r -y
 ```
+
+If there is an error 'Unable to locate ...', try following commands.
+```bash
+echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/ros-latest.list
+sudo apt update
+```
 ## Check
 
 using the following command to check the self-defined controller. Like:`cartesian_velocity_controller`
