@@ -19,6 +19,14 @@ If there is an error 'Unable to locate ...', try following commands.
 echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/ros-latest.list
 sudo apt update
 ```
+## Change the arm to Xarm6
+1. Clone xarm repository [https://github.com/xArm-Developer/xarm_ros]
+1. Copy stl files in `xarm_ros/xarm_description/meshes/xarm6/visual/` to `Compliant-Control-and-Application/robots/universal_robot/fmauch_universal_robot/ur_description/meshes/ur5e/visual/` adding `_xarm` to the end of file names.
+1. Rename the values of `visual` and `collision` in `Compliant-Control-and-Application/robots/universal_robot/fmauch_universal_robot/ur_description/config/ur5e/visual_parameters.yaml` to the xarm's stl files.
+1. Copy the values in `xarm_ros/xarm_description/urdf/xarm6.urdf.xacro` to `Compliant-Control-and-Application/robots/universal_robot/fmauch_universal_robot/ur_description/urdf/inc/ur_macro.xacro`
+    1. Add the definitions such as `joint1_lower_limit` to `<xacro:macro name="ur_robot" params="`.
+    1. Do not change the name of links and joints as defined in `ur_macro.xacro`.
+
 ## Check
 
 using the following command to check the self-defined controller. Like:`cartesian_velocity_controller`
